@@ -2,7 +2,7 @@
   "name": "reserva-equipamentos",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<seu-usuario>.github.io/<seu-repositorio>",
+  "homepage": "https://github.com/ti-eccos/reserva-equipamentos.git",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/dom": "^10.4.0",
