@@ -1,0 +1,22 @@
+.badge {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: var(--background-white);
+  font-weight: 600;
+  box-shadow: var(--soft-shadow);
+}
+
+.badge.bg-danger {
+  background-color: var(--error-red);
+}
+
+.badge.bg-success {
+  background-color: var(--success-green);
+}
+
+.badge.bg-secondary {
+  background-color: var(--gray-dark);
+}

@@ -1,0 +1,65 @@
+.admin-dashboard {
+    padding: 20px;
+}
+
+.admin-dashboard h1 {
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    color: #4A90E2;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.common-btn {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.common-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+.common-btn.active {
+    background-color: #34A853;
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: #F1F3F4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}

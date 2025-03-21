@@ -1,0 +1,288 @@
+.reservation-approval {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.reservation-approval h3 {
+    color: #1A73E8;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.filter-controls, .search-controls {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.filter-controls label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.filter-controls select, .search-controls input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    width: 250px;
+}
+
+.search-controls input {
+    width: 100%;
+}
+
+.reservations-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.reservations-table thead {
+    background-color: #F1F3F4;
+}
+
+.reservations-table thead th {
+    background-color: #1A73E8;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+.reservations-table th,
+.reservations-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.reservations-table th.small-column,
+.reservations-table td.small-column {
+    width: 10%;
+}
+
+.reservations-table th.medium-column,
+.reservations-table td.medium-column {
+    width: 15%;
+}
+
+.reservations-table th.large-column-finalidade,
+.reservations-table td.large-column-finalidade {
+    width: 40%;
+    max-width: 500px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.reservations-table tbody tr:hover td.large-column-finalidade {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.reservations-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.delete-reservation {
+    color: #F44336;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: block;
+    text-align: center;
+}
+
+.delete-reservation:hover {
+    color: #D32F2F;
+}
+
+.custom-status-select {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.selected-option {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #f1f3f4;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selected-option::after {
+    content: '▼';
+    font-size: 0.8rem;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.custom-status-select.open .selected-option::after {
+    transform: rotate(180deg);
+}
+
+.options-container {
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 8px 0;
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease;
+}
+
+.custom-status-select.open .options-container {
+    display: block;
+}
+
+.status-option {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    margin: 4px 8px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-option:hover {
+    background-color: #f1f3f4;
+    transform: translateX(5px);
+}
+
+.status-option[data-value="pendente"] {
+    background-color: #808080;
+    color: #FFF;
+}
+
+.status-option[data-value="aprovado"] {
+    background-color: #4CAF50;
+    color: #FFF;
+}
+
+.status-option[data-value="rejeitado"] {
+    background-color: #F44336;
+    color: #FFF;
+}
+
+.status-option[data-value="em uso"] {
+    background-color: #808080;
+    color: #FFF;
+}
+
+.status-option[data-value="devolvido"] {
+    background-color: #2196F3;
+    color: #FFF;
+}
+
+.status-option[data-value="cancelado"] {
+    background-color: #FF9800;
+    color: #FFF;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.status-icon {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+[title] {
+    position: relative;
+}
+
+[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.reservations-table th.medium-column.status,
+.reservations-table td.medium-column.status {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.reservations-table td.medium-column.status .status-icon {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.reservations-table td.medium-column.status .status-option span:not(.status-icon) {
+    display: inline;
+}
+
+.reservations-table td.medium-column.status:hover .status-option span:not(.status-icon) {
+    display: inline;
+}
+
+@media screen and (max-width: 768px) {
+    .reservations-table td.medium-column.status .selected-option span:not(.status-icon),
+    .reservations-table td.medium-column.status .status-option span:not(.status-icon) {
+        display: none;
+    }
+    
+    .reservations-table th.medium-column.status,
+    .reservations-table td.medium-column.status {
+        width: 10%;
+    }
+    
+    .reservations-table td.medium-column.status .selected-option {
+        justify-content: center;
+    }
+    
+    .selected-option::after {
+        display: none;
+    }
+}

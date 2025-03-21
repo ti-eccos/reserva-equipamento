@@ -1,0 +1,167 @@
+.reservation-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--component-spacing);
+  background-color: var(--background-white);
+  border-radius: 12px;
+  box-shadow: var(--soft-shadow);
+}
+
+.reservation-form h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: var(--component-spacing);
+}
+
+.error-message {
+  background-color: var(--error-red);
+  color: var(--background-white);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: var(--component-spacing);
+  text-align: center;
+}
+
+.reservation-time-selection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--component-spacing);
+}
+
+.time-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--component-spacing);
+}
+
+.time-inputs div {
+  flex: 1;
+}
+
+.time-inputs label, .purpose-input label {
+  font-weight: 600;
+  color: var(--gray-dark);
+}
+
+.time-inputs input, .purpose-input textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--gray-medium);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.time-inputs input:focus, .purpose-input textarea:focus {
+  border-color: var(--accent-blue);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(33,150,243,0.2);
+}
+
+.form-hint {
+  display: block;
+  color: var(--gray-dark);
+  font-size: 0.8rem;
+  margin-top: 3px;
+}
+
+.purpose-input textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--component-spacing);
+}
+
+.back-btn, .submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn {
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+}
+
+.back-btn:hover {
+  background-color: var(--gray-medium);
+}
+
+.submit-btn {
+  background-color: var(--success-green);
+  color: var(--background-white);
+}
+
+.submit-btn:disabled {
+  background-color: var(--gray-medium);
+  cursor: not-allowed;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: var(--accent-blue);
+}
+
+.conflict-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.conflict-modal-content {
+  background-color: var(--background-white);
+  padding: var(--component-spacing);
+  border-radius: 12px;
+  box-shadow: var(--soft-shadow);
+  max-width: 500px;
+  width: 100%;
+}
+
+.conflict-modal-content h2 {
+  color: var(--error-red);
+  font-size: 1.5rem;
+  margin-bottom: var(--component-spacing);
+}
+
+.conflict-modal-content p {
+  color: var(--gray-dark);
+  margin-bottom: var(--component-spacing);
+}
+
+.conflict-modal-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: var(--component-spacing);
+}
+
+.conflict-modal-content ul li {
+  color: var(--gray-dark);
+}
+
+.conflict-modal-content button {
+  background-color: var(--primary-blue);
+  color: var(--background-white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.conflict-modal-content button:hover {
+  background-color: var(--secondary-blue);
+}

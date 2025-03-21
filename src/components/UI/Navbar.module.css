@@ -1,0 +1,65 @@
+.navbar {
+  background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
+  color: var(--background-white);
+  padding: 1rem 2rem;
+  box-shadow: var(--soft-shadow);
+  border-radius: 10px;
+  margin-bottom: var(--component-spacing);
+  border-bottom: 2px solid var(--accent-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--background-white);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nameBox {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: var(--background-white);
+  color: var(--gray-dark);
+  box-shadow: var(--soft-shadow);
+  transition: transform 0.3s ease;
+}
+
+.roleBox {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: var(--success-green);
+  color: var(--background-white);
+  box-shadow: var(--soft-shadow);
+  transition: transform 0.3s ease;
+}
+
+.logoutBtn {
+  background-color: var(--error-red);
+  color: var(--background-white);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nameBox:hover, .roleBox:hover, .logoutBtn:hover {
+  transform: translateY(-3px);
+}

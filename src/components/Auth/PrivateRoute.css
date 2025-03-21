@@ -1,0 +1,23 @@
+.private-route-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: var(--gray-dark);
+  background-color: var(--background-white);
+}
+
+.private-route-loading::after {
+  content: "Carregando...";
+  animation: fadeIn 1s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

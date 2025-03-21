@@ -1,0 +1,88 @@
+.reservation-calendar {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--background-white);
+  box-shadow: var(--soft-shadow);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-nav-btn {
+  background-color: var(--gray-light);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.calendar-nav-btn:hover {
+  background-color: var(--gray-medium);
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--gray-medium);
+  padding-bottom: 0.5rem;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.calendar-day:hover:not(.out-of-range) {
+  background-color: var(--gray-light);
+}
+
+.today {
+  font-weight: bold;
+  border: 2px solid var(--success-green);
+}
+
+.available {
+  background-color: var(--info-teal);
+  color: var(--background-white);
+}
+
+.out-of-range {
+  color: var(--gray-medium);
+  cursor: default;
+  pointer-events: none;
+}
+
+.selected {
+  background-color: var(--success-green);
+  color: var(--background-white);
+}
+
+.selected:hover {
+  background-color: var(--accent-blue);
+}
