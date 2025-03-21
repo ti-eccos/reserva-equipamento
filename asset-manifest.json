@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ti-eccos/reserva-equipamentos.git/static/css/main.127535e7.css",
+    "main.js": "/ti-eccos/reserva-equipamentos.git/static/js/main.c7000026.js",
+    "static/js/488.3ad4c635.chunk.js": "/ti-eccos/reserva-equipamentos.git/static/js/488.3ad4c635.chunk.js",
+    "static/media/google-icon.png": "/ti-eccos/reserva-equipamentos.git/static/media/google-icon.5ee03b5089705e14a38b.png",
+    "index.html": "/ti-eccos/reserva-equipamentos.git/index.html",
+    "main.127535e7.css.map": "/ti-eccos/reserva-equipamentos.git/static/css/main.127535e7.css.map",
+    "main.c7000026.js.map": "/ti-eccos/reserva-equipamentos.git/static/js/main.c7000026.js.map",
+    "488.3ad4c635.chunk.js.map": "/ti-eccos/reserva-equipamentos.git/static/js/488.3ad4c635.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.127535e7.css",
+    "static/js/main.c7000026.js"
+  ]
+}
